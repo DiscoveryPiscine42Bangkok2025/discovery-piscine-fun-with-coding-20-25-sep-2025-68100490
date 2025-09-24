@@ -1,0 +1,94 @@
+/* รีเซ็ตค่าเบื้องต้น */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navigation bar */
+.navbar {
+  position: fixed; 
+  top: 0; left: 0; right: 0;
+  background: rgba(255, 182, 193, 0.9); /* ชมพูพาสเทล */
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: #ff69b4;
+}
+
+/* Home background */
+body {
+    min-height: 100vh;
+    font-family: "Poppins", sans-serif;
+}
+
+
+body.rush {
+    background: url("poof.gif") no-repeat center center fixed;
+    background-size: cover;
+}
+
+body.page1 {
+  background: url("catmeme.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.page2 {
+  background: url("giphy.gif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+
+/* Center content */
+.center-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  padding-top: 60px; /* กัน navbar */
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  background: #ff69b4;
+  color: white;
+  border-radius: 20px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ff1493;
+}
+
+/* Page content (page1, page2) */
+.page-content {
+  margin-top: 80px;
+  padding: 20px;
+}
